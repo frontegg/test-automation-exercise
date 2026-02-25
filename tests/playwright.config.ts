@@ -11,7 +11,7 @@ const playwrightConfig: PlaywrightTestConfig = {
         video: 'retain-on-failure',
         screenshot: 'only-on-failure',
         trace: 'retain-on-failure',
-        baseURL: 'http://localhost:3000',
+        baseURL: 'http://localhost:9000',
     },
     projects: [
         {
