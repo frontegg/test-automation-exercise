@@ -1,6 +1,6 @@
 import { PlaywrightTestConfig } from '@playwright/test';
 import { TestDirectory } from './utils/test-directory';
-import { getReporters } from './getReporters';
+import { getReporters } from './utils/getReporters';
 
 const playwrightConfig: PlaywrightTestConfig = {
     use: {
