@@ -1,12 +1,11 @@
-import {devices, Project} from '@playwright/test';
+import { devices, Project } from '@playwright/test';
 
-import {browserConfig} from './browser-config';
-import {Device} from './device';
-import {Browser} from './browser';
+import { browserConfig } from './browser-config';
+import { Device } from './device';
+import { Browser } from './browser';
 
 function generateBrowserConfig(device: Device, browser: Browser, useArgs?: object): Project {
     return {
-        testMatch: browserConfig.testMatch,
         timeout: browserConfig.timeout,
         use: {
             ...devices[device],
@@ -15,15 +14,15 @@ function generateBrowserConfig(device: Device, browser: Browser, useArgs?: objec
             ...useArgs,
             env: {
                 MODE: 'hosted',
-                FRAMEWORK: 'react',
-            },
-        },
+                FRAMEWORK: 'react'
+            }
+        }
     };
 }
 
 export const chromeConfig: Project = generateBrowserConfig(Device.DESKTOP_CHROME, Browser.CHROME, {
     permissions: ['clipboard-read'],
     launchOptions: {
-        devtools: false,
-    },
+        devtools: false
+    }
 });

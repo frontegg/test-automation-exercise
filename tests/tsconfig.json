@@ -21,9 +21,7 @@
   "include": [
     "src/**/*",
     "*.ts",
-    "zephyr.utils.ts",
-    "node_modules/@types/jest/index.d.ts",
-    "node_modules/@types/jest/index.d.ts"
+    "utils/**/*"
   ],
   "exclude": [
     "node_modules",

@@ -1,3 +1,3 @@
 export enum TestDirectory {
-    ALL = './src',
+    ALL = './src'
 }

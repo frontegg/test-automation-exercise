@@ -1,10 +1,29 @@
 # Test Automation Exercise
 
-A test automation exercise project by Frontegg. This repository contains a React client application built with Vite and Frontegg SDK, along with an E2E test suite powered by Playwright.
+A test automation exercise project by Frontegg. This repository contains a React client application built with Vite and the Frontegg SDK, along with an E2E test suite powered by Playwright.
 
 ## Client Application
 
 The client app (`client-app/client-app-vite`) is a React application that integrates with the Frontegg platform. It provides hosted and embedded login flows, tenant switching, step-up authentication, and feature flag evaluation. The app runs locally on port 3000 using Vite.
+
+## Project Structure
+
+```
+test-automation-exercise/
+├── client-app/
+│   ├── client-app-vite/    # React + Vite application with Frontegg SDK
+│   └── utils/              # Shared client utilities
+├── tests/
+│   ├── src/
+│   │   └── e2e-tests/      # E2E test specs
+│   ├── utils/              # Test utilities and config helpers
+│   ├── playwright.config.ts
+│   ├── getReporters.ts
+│   ├── tsconfig.json
+│   └── package.json
+└── docs/
+    └── images/             # Screenshots for exercise reference
+```
 
 ## Prerequisites
 
@@ -37,7 +56,7 @@ npm test
 
 ### 1. Make the first test pass
 
-The sanity test in `tests/src/e2e-tests/sanity.spec.ts` navigates to the application and verifies the page loads with the expected heading. Make the necessary changes so that this test passes when running `npm test`.
+A sanity test exists in `tests/src/e2e-tests/sanity.spec.ts`. It navigates to the application and verifies the page loads with the expected heading. Make the necessary changes so that this test passes when running `npm test`.
 
 ### 2. Health check before test execution
 
