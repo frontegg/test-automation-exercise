@@ -6,4 +6,7 @@ DIR_NAME="test-automation-exercise"
 
 echo "==> Cloning repository..."
 git clone "$REPO_URL" "$DIR_NAME"
-cd "$DIR_NAME"
+
+echo ""
+echo "==> Done! Repository cloned to $DIR_NAME"
+echo "    cd $DIR_NAME to get started"

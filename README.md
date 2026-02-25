@@ -38,10 +38,12 @@ Run the following command to clone the repo:
 curl -fsSL https://raw.githubusercontent.com/frontegg/test-automation-exercise/master/scripts/setup.sh | bash
 ```
 
-This script will:
-1. Clone the repository
-2. Install client app dependencies (`yarn install`)
-3. Install test dependencies (`npm install`)
+Then install the dependencies and run the tests:
+
+```bash
+cd test-automation-exercise/tests
+npm install
+```
 
 ### Run the tests
 
