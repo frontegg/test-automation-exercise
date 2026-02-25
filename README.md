@@ -56,7 +56,7 @@ npm test
 
 ### 1. Make the first test pass
 
-A sanity test exists in `tests/src/e2e-tests/sanity.spec.ts`. It navigates to the application and verifies the page loads with the expected heading. Make the necessary changes so that this test passes when running `npm test`.
+A sanity test exists in `tests/src/e2e-tests/sanity.spec.ts`. It navigates to the application and verifies the page loads with the expected heading. The test should work for any developer cloning the repo and on CI without manually starting the client app. Make the necessary changes so that this test passes when running `npm test`.
 
 ### 2. Health check before test execution
 
