@@ -32,23 +32,21 @@ test-automation-exercise/
 
 ## Getting Started
 
-### Clone the repository
+Run the following command to clone the repo:
 
 ```bash
-git clone git@github.com:frontegg/test-automation-exercise.git
-cd test-automation-exercise
+curl -fsSL https://raw.githubusercontent.com/frontegg/test-automation-exercise/master/scripts/setup.sh | bash
 ```
 
-### Install dependencies
-
-```bash
-cd tests
-npm install
-```
+This script will:
+1. Clone the repository
+2. Install client app dependencies (`yarn install`)
+3. Install test dependencies (`npm install`)
 
 ### Run the tests
 
 ```bash
+cd test-automation-exercise/tests
 npm test
 ```
 
