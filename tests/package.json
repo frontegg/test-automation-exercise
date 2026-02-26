@@ -28,7 +28,6 @@
   },
   "dependencies": {
     "@faker-js/faker": "^10.3.0",
-    "@frontegg/convict": "^2.0.611",
     "axios": "^1.13.5",
     "axios-retry": "^4.5.0",
     "convict": "^6.2.4",
