@@ -21,7 +21,8 @@
   "include": [
     "src/**/*",
     "*.ts",
-    "utils/**/*"
+    "utils/**/*",
+    "pages/**/*"
   ],
   "exclude": [
     "node_modules",
