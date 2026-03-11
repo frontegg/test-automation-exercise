@@ -3,13 +3,19 @@ import { TestDirectory } from './utils/test-directory';
 import { getReporters } from './utils/getReporters';
 
 const playwrightConfig: PlaywrightTestConfig = {
+    webServer: {
+        command: 'yarn start',
+        url: 'http://localhost:3000',
+        reuseExistingServer: true,
+        cwd: '../client-app/client-app-vite',
+    },
     use: {
-        headless: false,
+        headless: true,
         ignoreHTTPSErrors: true,
         video: 'retain-on-failure',
         screenshot: 'only-on-failure',
         trace: 'retain-on-failure',
-        baseURL: 'http://localhost:9000'
+        baseURL: 'http://localhost:3000'
     },
     projects: [
         {
@@ -18,6 +24,7 @@ const playwrightConfig: PlaywrightTestConfig = {
             testIgnore: []
         }
     ],
+    globalSetup: './global-setup.ts',
     outputDir: 'test-results/',
     reporter: getReporters(),
     testMatch: /.*.spec.ts/,
