@@ -11,6 +11,12 @@ const playwrightConfig: PlaywrightTestConfig = {
         trace: 'retain-on-failure',
         baseURL: 'http://localhost:3000'
     },
+    webServer: {
+        command: 'cd ../client-app/client-app-vite && yarn start',
+        port: 3000,
+        reuseExistingServer: true,
+        timeout: 120 * 1000
+    },
     projects: [
         {
             name: 'all',
