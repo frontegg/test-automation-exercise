@@ -9,7 +9,13 @@ const playwrightConfig: PlaywrightTestConfig = {
         video: 'retain-on-failure',
         screenshot: 'only-on-failure',
         trace: 'retain-on-failure',
-        baseURL: 'http://localhost:9000'
+        baseURL: 'http://localhost:3000'
+    },
+    webServer: {
+        command: 'cd ../client-app/client-app-vite && yarn start',
+        port: 3000,
+        reuseExistingServer: true,
+        timeout: 120 * 1000
     },
     projects: [
         {
