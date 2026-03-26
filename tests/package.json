@@ -30,7 +30,7 @@
     "@faker-js/faker": "^10.3.0",
     "axios": "^1.13.5",
     "axios-retry": "^4.5.0",
-    "convict": "^6.2.4",
+    "convict": "^6.2.5",
     "convict-format-with-validator": "^6.2.0",
     "date-fns": "^4.1.0",
     "moment": "^2.30.1",
